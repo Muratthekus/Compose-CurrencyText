@@ -35,6 +35,7 @@ fun CurrencyTextField(
     maxNoOfDecimal: Int = 2,
     currencySymbol: String,
     limit: Int = Int.MAX_VALUE,
+    label: @Composable (() -> Unit)? = null,
     errorColor: Color = LocalTextStyle.current.color,
     errorText: String? = null
 ) {
@@ -73,6 +74,7 @@ fun CurrencyTextField(
     ) {
         OutlinedTextField(
             value = textFieldState,
+            label = label,
             modifier = modifier
                 .padding(horizontal = 10.dp)
                 .height(80.dp)
