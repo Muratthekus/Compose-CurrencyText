@@ -24,7 +24,7 @@ Inorder to use CurrencyText add JitPack repository to root level build.gradle fi
 And add CurrencyText to your dependencies
 
 ```gradle
-    implementation 'com.github.Muratthekus:Compose-CurrencyText:1.0'
+    implementation 'com.github.Muratthekus:Compose-CurrencyText:1.0.1'
 ```
 
 ## Usage
