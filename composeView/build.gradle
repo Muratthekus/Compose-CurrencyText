@@ -39,4 +39,7 @@ android {
 dependencies {
 
     implementation "androidx.compose.material:material:$compose_ui_version"
+
+    androidTestImplementation("androidx.test:core:$testCoreVersion")
+    androidTestImplementation("androidx.test:runner:$testRunnerVersion")
 }
