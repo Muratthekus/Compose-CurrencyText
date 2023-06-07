@@ -83,7 +83,11 @@ fun CurrencyTextField(
             onValueChange = {
                 textFieldState = formatUserInput(
                     oldText,
-                    it,
+                    sanitizeInput(
+                        currencySymbol,
+                        decimalFormatSymbols,
+                        it
+                    ),
                     decimalFormatSymbols,
                     maxNoOfDecimal,
                     currencySymbol,
